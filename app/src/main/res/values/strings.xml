@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RedditClient</string>
+
+    <!-- login page-->
+    <string name="username_hint">User Name</string>
+    <string name="login">LOGIN</string>
+    <string name="username_error">Username cannot be empty, should be alphabet and at most 20 characters!</string>
+    <string name="title_activity_items">ItemsActivity</string>
+    <string name="title_activity_items_java">ItemsJavaActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="no_data_error">Data Format Error!</string>
+    <string name="error">Error Message</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_item_detail">ItemDetailActivity</string>
+    <string name="no_image_error">No Image Available!</string>
+</resources>
