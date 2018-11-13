@@ -69,13 +69,13 @@ class ItemDetailActivity : AppCompatActivity(), ItemDetailContract.ItemDetailVie
 
         val image_width = Util.getScreenWidthPixels(this@ItemDetailActivity)
         image!!.layoutParams = LinearLayout.LayoutParams(image_width, image_width)
-        image!!.scaleType = ImageView.ScaleType.CENTER
+        image!!.scaleType = ImageView.ScaleType.CENTER_CROP
 
         if (child.data!!.preview != null) {
 
             GlideApp.with(this)
                     .load(child.data!!.preview!!.images!![0].source!!.url)
-                    .centerInside()
+                    .centerCrop()
                     .transition(DrawableTransitionOptions.withCrossFade()) //Optional
                     .skipMemoryCache(true)  //No memory cache
                     .diskCacheStrategy(DiskCacheStrategy.NONE)   //No disk cache
